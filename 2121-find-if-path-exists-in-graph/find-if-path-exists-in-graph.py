@@ -9,7 +9,7 @@ class Solution:
         q.append(source)
         visited[source] = True
         while(len(q) > 0):
-            a = q.pop(0)
+            a = q.pop()
             if a == destination:
                 return True
             for neighbour in graph[a]:
