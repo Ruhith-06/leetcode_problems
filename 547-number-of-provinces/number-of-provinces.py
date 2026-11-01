@@ -9,10 +9,10 @@ class Solution:
                 count+=1
                 visited[i]=True
                 q.append(i)
-                while len(q)>0:
-                    a=q.pop()
-                    for j in range(n):
-                        if isConnected[a][j]==1 and visited[j]==False:
-                            q.append(j)
-                            visited[j]=True
+            while len(q)>0:
+                a=q.pop()
+                for j in range(n):
+                    if isConnected[a][j]==1 and visited[j]==False:
+                        q.append(j)
+                        visited[j]=True
         return count
