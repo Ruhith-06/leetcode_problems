@@ -12,7 +12,7 @@ class Solution:
                             l.append(nums2[k])
                             flag = False
                             break
-                    break
+                    
             if flag:
                 l.append(-1)
                     
