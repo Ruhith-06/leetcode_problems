@@ -4,7 +4,6 @@ class Solution:
         i = 0
         sum = 0
         n = len(nums)
-        while(i < n):
+        for i in range(0,len(nums),2):
             sum += nums[i]
-            i += 2
         return sum
