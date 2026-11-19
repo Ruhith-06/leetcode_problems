@@ -12,8 +12,7 @@ class Solution:
                 return root
             path += str(root.val)
             if root.left == None and root.right == None:
-                lst.append(path)
-                return
+                return lst.append(path)
             path += "->"
             solve(root.left,path)
             solve(root.right,path)
